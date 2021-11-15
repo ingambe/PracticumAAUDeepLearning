@@ -1,0 +1,2 @@
+[34m[1mwandb[39m[22m: [33mWARNING[39m Step must only increase in log calls.  Step 0 < 1; dropping {'value_a': 3}.
+[34m[1mwandb[39m[22m: [33mWARNING[39m Step must only increase in log calls.  Step 0 < 1; dropping {'value_b': 2}.

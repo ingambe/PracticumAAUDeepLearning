@@ -1,0 +1,827 @@
+diff --git a/2-Linear-networks/Exercise/.ipynb_checkpoints/simple-regression-checkpoint.ipynb b/2-Linear-networks/Exercise/.ipynb_checkpoints/simple-regression-checkpoint.ipynb
+index 56a193c..2f064d1 100644
+--- a/2-Linear-networks/Exercise/.ipynb_checkpoints/simple-regression-checkpoint.ipynb
++++ b/2-Linear-networks/Exercise/.ipynb_checkpoints/simple-regression-checkpoint.ipynb
+@@ -196,7 +196,7 @@
+    "outputs": [],
+    "source": [
+     "n_features = train_data.shape[1]\n",
+-    "linear_weights = # TODO, initialize a random tensor "
++    "linear_weights = 0 # TODO, initialize a random tensor "
+    ]
+   },
+   {
+diff --git a/2-Linear-networks/Exercise/simple-regression.ipynb b/2-Linear-networks/Exercise/simple-regression.ipynb
+index 56a193c..2f064d1 100644
+--- a/2-Linear-networks/Exercise/simple-regression.ipynb
++++ b/2-Linear-networks/Exercise/simple-regression.ipynb
+@@ -196,7 +196,7 @@
+    "outputs": [],
+    "source": [
+     "n_features = train_data.shape[1]\n",
+-    "linear_weights = # TODO, initialize a random tensor "
++    "linear_weights = 0 # TODO, initialize a random tensor "
+    ]
+   },
+   {
+diff --git a/2-Linear-networks/Slides/.ipynb_checkpoints/5-Softmax-regression-checkpoint.ipynb b/2-Linear-networks/Slides/.ipynb_checkpoints/5-Softmax-regression-checkpoint.ipynb
+deleted file mode 100644
+index 8d66b90..0000000
+--- a/2-Linear-networks/Slides/.ipynb_checkpoints/5-Softmax-regression-checkpoint.ipynb
++++ /dev/null
+@@ -1,52 +0,0 @@
+-{
+- "cells": [
+-  {
+-   "cell_type": "markdown",
+-   "id": "7eb5efc6",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "-"
+-    }
+-   },
+-   "source": [
+-    "# Softmax regression\n",
+-    "\n",
+-    "From regression to classification"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "e8c37bb7",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "slide"
+-    }
+-   },
+-   "source": [
+-    "Rather than predicting quantities "
+-   ]
+-  }
+- ],
+- "metadata": {
+-  "celltoolbar": "Slideshow",
+-  "kernelspec": {
+-   "display_name": "Python 3",
+-   "language": "python",
+-   "name": "python3"
+-  },
+-  "language_info": {
+-   "codemirror_mode": {
+-    "name": "ipython",
+-    "version": 3
+-   },
+-   "file_extension": ".py",
+-   "mimetype": "text/x-python",
+-   "name": "python",
+-   "nbconvert_exporter": "python",
+-   "pygments_lexer": "ipython3",
+-   "version": "3.8.5"
+-  }
+- },
+- "nbformat": 4,
+- "nbformat_minor": 5
+-}
+diff --git a/2-Linear-networks/Slides/3-Implementation From Scratch.ipynb b/2-Linear-networks/Slides/3-Implementation From Scratch.ipynb
+index fe4a708..6cb8f03 100644
+--- a/2-Linear-networks/Slides/3-Implementation From Scratch.ipynb	
++++ b/2-Linear-networks/Slides/3-Implementation From Scratch.ipynb	
+@@ -1799,7 +1799,6 @@
+   "rise": {
+    "autolaunch": true,
+    "enable_chalkboard": true,
+-   "overlay": "<div class='my-top-right'><img height=80px src='http://d2l.ai/_static/logo-with-text.png'/></div><div class='my-top-left'></div>",
+    "scroll": true
+   }
+  },
+diff --git a/2-Linear-networks/Slides/4-Pytorch NN.ipynb b/2-Linear-networks/Slides/4-Pytorch NN.ipynb
+deleted file mode 100644
+index bfd5277..0000000
+--- a/2-Linear-networks/Slides/4-Pytorch NN.ipynb	
++++ /dev/null
+@@ -1,528 +0,0 @@
+-{
+- "cells": [
+-  {
+-   "cell_type": "markdown",
+-   "id": "d28b98ef",
+-   "metadata": {},
+-   "source": [
+-    "## Pytorch NN API\n",
+-    "\n",
+-    "Pytorch already includes everything we need to train a linear model in less than 10 lines of code!"
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 97,
+-   "id": "885a3bc9",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "skip"
+-    }
+-   },
+-   "outputs": [],
+-   "source": [
+-    "%matplotlib inline\n",
+-    "import random\n",
+-    "import torch\n",
+-    "from torch.utils import data\n",
+-    "from d2l import torch as d2l"
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 98,
+-   "id": "630a6827",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "slide"
+-    }
+-   },
+-   "outputs": [],
+-   "source": [
+-    "true_w = torch.tensor([2, -3.4, 5, 6])\n",
+-    "true_b = 2.4\n",
+-    "features, labels = d2l.synthetic_data(true_w, true_b, 2000)"
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 99,
+-   "id": "ee15a747",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "-"
+-    }
+-   },
+-   "outputs": [],
+-   "source": [
+-    "def load_array(data_arrays, batch_size, is_train=True):  #@save\n",
+-    "    \"\"\"Construct a PyTorch data iterator.\"\"\"\n",
+-    "    dataset = data.TensorDataset(*data_arrays)\n",
+-    "    return data.DataLoader(dataset, batch_size, shuffle=is_train)\n",
+-    "\n",
+-    "batch_size = 32\n",
+-    "data_iter = load_array((features, labels), batch_size)"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "1d5eb666",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "-"
+-    }
+-   },
+-   "source": [
+-    "We can now iterate over minibtaches"
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 100,
+-   "id": "cb5d27e4",
+-   "metadata": {},
+-   "outputs": [
+-    {
+-     "data": {
+-      "text/plain": [
+-       "[tensor([[-0.7750, -0.3375, -3.0775,  0.3999],\n",
+-       "         [ 0.3603,  0.5259, -0.7980,  0.7253],\n",
+-       "         [-0.6213,  1.9601, -0.1050, -0.4855],\n",
+-       "         [ 0.7630, -0.7636,  0.5364, -0.9245],\n",
+-       "         [ 0.7411,  0.2197,  1.9276,  1.4122],\n",
+-       "         [ 0.0977,  0.4852,  0.0378,  0.1262],\n",
+-       "         [ 1.1099, -0.0328, -0.0409,  3.2606],\n",
+-       "         [ 0.0399,  0.7603, -0.1673, -1.0199],\n",
+-       "         [-1.1211, -1.6171,  2.6445, -1.5734],\n",
+-       "         [-0.1746, -1.4129,  0.8719, -0.4062],\n",
+-       "         [ 1.0378, -0.3140, -0.1650,  0.5129],\n",
+-       "         [ 1.2433, -0.6955,  0.2335, -0.5717],\n",
+-       "         [-0.8743,  2.1318, -1.3332, -0.8431],\n",
+-       "         [ 0.6405,  0.7645, -1.7711,  0.9211],\n",
+-       "         [-0.1944, -1.2696,  0.5046, -0.6224],\n",
+-       "         [ 0.9282,  1.4796,  0.0818, -0.1370],\n",
+-       "         [-0.1712, -0.1425,  0.2905, -0.6542],\n",
+-       "         [-0.5804, -1.6171, -0.4810,  3.0605],\n",
+-       "         [ 1.5268, -1.3805,  0.3386,  1.3706],\n",
+-       "         [ 1.3698,  1.4510, -1.3403, -0.4861],\n",
+-       "         [ 0.4806, -0.6625,  1.5324, -0.5126],\n",
+-       "         [-1.0851, -0.0158, -1.1803, -2.3786],\n",
+-       "         [ 1.5731,  1.5131, -0.8933,  0.5534],\n",
+-       "         [-0.5173, -0.2646, -1.2180, -0.2796],\n",
+-       "         [ 1.0944, -0.5429, -0.5775,  1.0872],\n",
+-       "         [ 0.2909,  0.2836, -1.7860,  0.1919],\n",
+-       "         [ 0.3857, -0.9402,  0.1239,  1.1654],\n",
+-       "         [ 0.2642, -1.4836, -0.8509,  0.6438],\n",
+-       "         [-1.5941, -0.3998,  1.2165,  0.4891],\n",
+-       "         [ 0.9408,  0.6589, -1.3848, -0.7572],\n",
+-       "         [-0.0623,  0.3164,  0.0477,  2.4150],\n",
+-       "         [ 1.0281, -0.0974, -0.6562,  0.2518]]),\n",
+-       " tensor([[-10.9845],\n",
+-       "         [  1.6911],\n",
+-       "         [ -8.9376],\n",
+-       "         [  3.6654],\n",
+-       "         [ 21.2419],\n",
+-       "         [  1.8888],\n",
+-       "         [ 24.0887],\n",
+-       "         [ -7.0533],\n",
+-       "         [  9.4259],\n",
+-       "         [  8.7706],\n",
+-       "         [  7.7876],\n",
+-       "         [  5.0114],\n",
+-       "         [-18.3170],\n",
+-       "         [ -2.2531],\n",
+-       "         [  5.1184],\n",
+-       "         [ -1.1873],\n",
+-       "         [  0.0661],\n",
+-       "         [ 22.6949],\n",
+-       "         [ 20.0575],\n",
+-       "         [ -9.4148],\n",
+-       "         [ 10.1973],\n",
+-       "         [-19.8966],\n",
+-       "         [ -0.7367],\n",
+-       "         [ -5.4857],\n",
+-       "         [ 10.0644],\n",
+-       "         [ -5.7686],\n",
+-       "         [ 13.9744],\n",
+-       "         [  7.6002],\n",
+-       "         [  9.5804],\n",
+-       "         [ -9.4159],\n",
+-       "         [ 15.9255],\n",
+-       "         [  3.0186]])]"
+-      ]
+-     },
+-     "execution_count": 100,
+-     "metadata": {},
+-     "output_type": "execute_result"
+-    }
+-   ],
+-   "source": [
+-    "next(iter(data_iter))"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "2b571b09",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "slide"
+-    }
+-   },
+-   "source": [
+-    "For standard operations, we can **use a framework's predefined layers,**\n",
+-    "which allow us to focus on the layers used to construct the model\n",
+-    "rather than having to focus on the implementation.\n",
+-    "\n",
+-    "The `Sequential` class defines a container\n",
+-    "for several layers that will be chained together.\n",
+-    "Given input data, a `Sequential` instance passes it through\n",
+-    "the first layer, in turn passing the output\n",
+-    "as the second layer's input and so forth.\n",
+-    "\n",
+-    "The layer is said to be *fully-connected*\n",
+-    "because each of its inputs is connected to each of its outputs\n",
+-    "by means of a matrix-vector multiplication."
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 101,
+-   "id": "48343d99",
+-   "metadata": {},
+-   "outputs": [],
+-   "source": [
+-    "# `nn` is an abbreviation for neural networks\n",
+-    "from torch import nn\n",
+-    "\n",
+-    "net = nn.Sequential(nn.Linear(4, 1))"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "46f23d59",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "slide"
+-    }
+-   },
+-   "source": [
+-    "We need to initialize the model parameters. By default Pytorch initialize the weight using an uniform distribution considering the size of the layer.\n",
+-    "\n",
+-    "You should **always** initialize your layer\n",
+-    "\n",
+-    "<center><img src=\"weights init.jpeg\" /></center>"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "4439d9f2",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "slide"
+-    }
+-   },
+-   "source": [
+-    "There is a litterature full of different weight initialization technique\n",
+-    "\n",
+-    "You can write yours:"
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 102,
+-   "id": "b30bb9dc",
+-   "metadata": {},
+-   "outputs": [
+-    {
+-     "data": {
+-      "text/plain": [
+-       "tensor([[ 0.0005,  0.0237,  0.0043, -0.0013]])"
+-      ]
+-     },
+-     "execution_count": 102,
+-     "metadata": {},
+-     "output_type": "execute_result"
+-    }
+-   ],
+-   "source": [
+-    "net[0].weight.data.normal_(0, 0.01) # net[0] is the first layer\n",
+-    "net[0].bias.data.fill_(0)\n",
+-    "net[0].weight.data"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "b08ca6db",
+-   "metadata": {},
+-   "source": [
+-    "99.9999% of the time you will use one from the litterature: [See Pytorch init doc](https://pytorch.org/docs/stable/nn.init.html)\n",
+-    "\n",
+-    "I recommand **Xavier normal**, it usually works well.\n",
+-    "If you have time/ressource you can try different init and pick the best ;)"
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 103,
+-   "id": "605492ef",
+-   "metadata": {},
+-   "outputs": [
+-    {
+-     "data": {
+-      "text/plain": [
+-       "tensor([[1.2792, 0.0103, 0.0357, 0.3401]])"
+-      ]
+-     },
+-     "execution_count": 103,
+-     "metadata": {},
+-     "output_type": "execute_result"
+-    }
+-   ],
+-   "source": [
+-    "def _weights_init(m):\n",
+-    "    if isinstance(m, nn.Linear):\n",
+-    "        torch.nn.init.xavier_normal_(m.weight)\n",
+-    "        m.bias.data.zero_()\n",
+-    "        \n",
+-    "net.apply(_weights_init)\n",
+-    "net[0].weight.data"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "ffaa0622",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "slide"
+-    }
+-   },
+-   "source": [
+-    "Then we need to define the loss function we will use.\n",
+-    "The `MSELoss` class computes the mean squared error, also known as squared $L_2$ norm.\n",
+-    "By default it returns the average loss over examples."
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 104,
+-   "id": "6f2d84ff",
+-   "metadata": {},
+-   "outputs": [],
+-   "source": [
+-    "loss = nn.MSELoss()"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "d32d40a4",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "slide"
+-    }
+-   },
+-   "source": [
+-    "Last piece of the puzzle, we need to define the optimizer.\n",
+-    "When we (**instantiate an `SGD` instance,**)\n",
+-    "we will specify the parameters to optimize over\n",
+-    "(obtainable from our net via `net.parameters()`), with a dictionary of hyperparameters\n",
+-    "required by our optimization algorithm.\n",
+-    "Minibatch stochastic gradient descent just requires that\n",
+-    "we set the value `lr`, which is set to 0.03 here."
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 105,
+-   "id": "02ec64dd",
+-   "metadata": {},
+-   "outputs": [],
+-   "source": [
+-    "optim = torch.optim.SGD(net.parameters(), lr=3e-2)"
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 106,
+-   "id": "4217580f",
+-   "metadata": {},
+-   "outputs": [
+-    {
+-     "data": {
+-      "text/plain": [
+-       "Parameter containing:\n",
+-       "tensor([[1.2792, 0.0103, 0.0357, 0.3401]], requires_grad=True)"
+-      ]
+-     },
+-     "execution_count": 106,
+-     "metadata": {},
+-     "output_type": "execute_result"
+-    }
+-   ],
+-   "source": [
+-    "next(net.parameters())"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "ddc550c0",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "slide"
+-    }
+-   },
+-   "source": [
+-    "Let's put everything together !\n",
+-    "\n",
+-    "The training loop itself is strikingly similar to what we did when implementing everything from scratch.\n",
+-    "\n",
+-    "For each minibatch, we go through the following ritual:\n",
+-    "\n",
+-    "* Generate predictions by calling `net(X)` and calculate the loss `l` (the forward propagation).\n",
+-    "* Calculate gradients by running the backpropagation.\n",
+-    "* Update the model parameters by invoking our optimizer.\n",
+-    "\n",
+-    "For good measure, we compute the loss after each epoch and print it to monitor progress."
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 107,
+-   "id": "a8520988",
+-   "metadata": {},
+-   "outputs": [
+-    {
+-     "name": "stdout",
+-     "output_type": "stream",
+-     "text": [
+-      "epoch 1, loss 0.023009\n",
+-      "epoch 2, loss 0.000104\n",
+-      "epoch 3, loss 0.000098\n",
+-      "epoch 4, loss 0.000098\n",
+-      "epoch 5, loss 0.000099\n",
+-      "epoch 6, loss 0.000098\n",
+-      "epoch 7, loss 0.000098\n",
+-      "epoch 8, loss 0.000098\n",
+-      "epoch 9, loss 0.000098\n",
+-      "epoch 10, loss 0.000098\n"
+-     ]
+-    }
+-   ],
+-   "source": [
+-    "num_epochs = 10\n",
+-    "for epoch in range(num_epochs):\n",
+-    "    for X, y in data_iter:\n",
+-    "        l = loss(net(X), y)\n",
+-    "        optim.zero_grad() # please don't forget!\n",
+-    "        l.backward() # remember: You need to tell wrt to what the gradient is computed\n",
+-    "        optim.step() # do a step in the gradient direction\n",
+-    "    with torch.no_grad():\n",
+-    "        l = loss(net(features), labels) \n",
+-    "        print(f'epoch {epoch + 1}, loss {l:f}')"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "1863865c",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "slide"
+-    }
+-   },
+-   "source": [
+-    "# ⚠️ NEVER FORGET TO ZERO_GRAD THE OPTIMIZER ⚠️"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "53a5b438",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "slide"
+-    }
+-   },
+-   "source": [
+-    "By default the optimizer accumulate the gradient!\n",
+-    "\n",
+-    "If you don't set it back to 0, it will keep previous gradient and sum them!\n",
+-    "\n",
+-    "If your model doesn't converge check this first!"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "c8ce8575",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "slide"
+-    }
+-   },
+-   "source": [
+-    "Now let's compare the true parameters and the learned one:"
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": 108,
+-   "id": "5925519f",
+-   "metadata": {},
+-   "outputs": [
+-    {
+-     "name": "stdout",
+-     "output_type": "stream",
+-     "text": [
+-      "error in estimating w: tensor([ 1.4734e-04,  4.4155e-04, -3.1853e-04, -5.7220e-06])\n",
+-      "error in estimating b: tensor([-0.0003])\n"
+-     ]
+-    }
+-   ],
+-   "source": [
+-    "w = net[0].weight.data\n",
+-    "print('error in estimating w:', true_w - w.reshape(true_w.shape))\n",
+-    "b = net[0].bias.data\n",
+-    "print('error in estimating b:', true_b - b)"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "034aa25d",
+-   "metadata": {},
+-   "source": [
+-    "<center><img src=\"memeticMemoryheader.png\" height=\"30%\" width=\"30%\" /></center>"
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": null,
+-   "id": "f03bd41c",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "skip"
+-    }
+-   },
+-   "outputs": [],
+-   "source": []
+-  }
+- ],
+- "metadata": {
+-  "celltoolbar": "Slideshow",
+-  "kernelspec": {
+-   "display_name": "Python 3",
+-   "language": "python",
+-   "name": "python3"
+-  },
+-  "language_info": {
+-   "codemirror_mode": {
+-    "name": "ipython",
+-    "version": 3
+-   },
+-   "file_extension": ".py",
+-   "mimetype": "text/x-python",
+-   "name": "python",
+-   "nbconvert_exporter": "python",
+-   "pygments_lexer": "ipython3",
+-   "version": "3.8.5"
+-  }
+- },
+- "nbformat": 4,
+- "nbformat_minor": 5
+-}
+diff --git a/2-Linear-networks/Slides/5-Softmax-regression.ipynb b/2-Linear-networks/Slides/5-Softmax-regression.ipynb
+deleted file mode 100644
+index f5940b9..0000000
+--- a/2-Linear-networks/Slides/5-Softmax-regression.ipynb
++++ /dev/null
+@@ -1,191 +0,0 @@
+-{
+- "cells": [
+-  {
+-   "cell_type": "markdown",
+-   "id": "493be603",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "-"
+-    }
+-   },
+-   "source": [
+-    "# SoftMax regression\n",
+-    "\n",
+-    "From regression to classification"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "f3d3da12",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "slide"
+-    }
+-   },
+-   "source": [
+-    "Rather than predicting quantities, we often want to classify things.\n",
+-    "\n",
+-    "**Example**: Classify a mail as spam or not, is there a cat in this imag, etc.?"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "613ef5ba",
+-   "metadata": {},
+-   "source": [
+-    "Classes are represented using encoding\n",
+-    "\n",
+-    "This encoding ensure there are no order in the representation\n",
+-    "if for **{dog, cat, bird, fish}** we were assigning $y \\in \\{1, 2, 3, 4\\}$ we would have assign an **order** and a **value** to each class. We don't want that!"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "d05ce57c",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "slide"
+-    }
+-   },
+-   "source": [
+-    "The usual way to represent categorical data is the *one-hot encoding*.\n",
+-    "\n",
+-    "It is a vector with as many components as we have categories.\n",
+-    "\n",
+-    "The component corresponding to particular instance's category is set to 1\n",
+-    "and all other components are set to 0.\n",
+-    "\n",
+-    "$$y \\in \\{(1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1)\\}.$$"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "df07b0d9",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "-"
+-    }
+-   },
+-   "source": [
+-    "To estimate the conditional probabilities of all the possible classes, we need a model with one output per class\n",
+-    "\n",
+-    "<center><img src=\"softmaxreg.svg\" height=\"70%\" width=\"70%\"/></center>"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "bd3a50b3",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "slide"
+-    }
+-   },
+-   "source": [
+-    "**Problem**: Our model output scalars, we want probabilities.\n",
+-    "These scalars are called **logits**.\n",
+-    "\n",
+-    "To transform a vector of **logits** into a probability vector, we use the **SoftMax** function\n",
+-    "\n",
+-    "$$\\hat{\\mathbf{y}} = \\mathrm{softmax}(\\mathbf{o})\\quad \\text{where}\\quad \\hat{y}_j = \\frac{\\exp(o_j)}{\\sum_k \\exp(o_k)}. $$"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "41f21599",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "slide"
+-    }
+-   },
+-   "source": [
+-    "We need a loss function capable to mesure the quality of our predicted probabilities\n",
+-    "\n",
+-    "We rely on the **maximum likelihood** estimation\n",
+-    "\n",
+-    "**Softmax** provides a vector $\\hat{\\mathbf{y}}$,\n",
+-    "which we can interpret as estimated conditional probabilities\n",
+-    "of each class given any input $\\mathbf{x}$, e.g.,\n",
+-    "$\\hat{y}_1$ = $P(y=\\text{cat} \\mid \\mathbf{x})$."
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "f129a38c",
+-   "metadata": {},
+-   "source": [
+-    "Suppose that the entire dataset $\\{\\mathbf{X}, \\mathbf{Y}\\}$ has $n$ examples,\n",
+-    "where the example indexed by $i$\n",
+-    "consists of a feature vector $\\mathbf{x}^{(i)}$ and a one-hot label vector $\\mathbf{y}^{(i)}$.\n",
+-    "We can compare the estimates with reality\n",
+-    "by checking how probable the actual classes are\n",
+-    "according to our model, given the features:\n",
+-    "\n",
+-    "$$\n",
+-    "P(\\mathbf{Y} \\mid \\mathbf{X}) = \\prod_{i=1}^n P(\\mathbf{y}^{(i)} \\mid \\mathbf{x}^{(i)}).\n",
+-    "$$\n",
+-    "\n",
+-    "**If $P(\\mathbf{Y} \\mid \\mathbf{X}) = 1$ we have a perfect model!** \n",
+-    "\n",
+-    "We want to *maximize* the maximum likelihood. However, in neural network, we want to have a loss we can *minimize*"
+-   ]
+-  },
+-  {
+-   "cell_type": "markdown",
+-   "id": "83136028",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "slide"
+-    }
+-   },
+-   "source": [
+-    "Minimizing the **negative log-likelihood** is equivalent to maximizing the maximum likelihood\n",
+-    "\n",
+-    "$$\n",
+-    "-\\log P(\\mathbf{Y} \\mid \\mathbf{X}) = \\sum_{i=1}^n -\\log P(\\mathbf{y}^{(i)} \\mid \\mathbf{x}^{(i)})\n",
+-    "= \\sum_{i=1}^n l(\\mathbf{y}^{(i)}, \\hat{\\mathbf{y}}^{(i)}),\n",
+-    "$$\n",
+-    "\n",
+-    "where for any pair of label $\\mathbf{y}$ and model prediction $\\hat{\\mathbf{y}}$ over $q$ classes,\n",
+-    "the loss function $l$ is\n",
+-    "\n",
+-    "$$ l(\\mathbf{y}, \\hat{\\mathbf{y}}) = - \\sum_{j=1}^q y_j \\log \\hat{y}_j. $$\n",
+-    "\n",
+-    "This loss is called the **cross-entropy loss**"
+-   ]
+-  },
+-  {
+-   "cell_type": "code",
+-   "execution_count": null,
+-   "id": "6b26bb12",
+-   "metadata": {
+-    "slideshow": {
+-     "slide_type": "skip"
+-    }
+-   },
+-   "outputs": [],
+-   "source": []
+-  }
+- ],
+- "metadata": {
+-  "celltoolbar": "Slideshow",
+-  "kernelspec": {
+-   "display_name": "Python 3",
+-   "language": "python",
+-   "name": "python3"
+-  },
+-  "language_info": {
+-   "codemirror_mode": {
+-    "name": "ipython",
+-    "version": 3
+-   },
+-   "file_extension": ".py",
+-   "mimetype": "text/x-python",
+-   "name": "python",
+-   "nbconvert_exporter": "python",
+-   "pygments_lexer": "ipython3",
+-   "version": "3.8.5"
+-  }
+- },
+- "nbformat": 4,
+- "nbformat_minor": 5
+-}

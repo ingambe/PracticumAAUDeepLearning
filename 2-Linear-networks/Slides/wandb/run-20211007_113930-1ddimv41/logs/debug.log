@@ -1,0 +1,165 @@
+2021-10-07 11:39:30,870 INFO    MainThread:304856 [wandb_setup.py:_flush():69] setting env: {}
+2021-10-07 11:39:30,870 INFO    MainThread:304856 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-10-07 11:39:30,870 INFO    MainThread:304856 [wandb_init.py:_log_setup():348] Logging user logs to /home/ingambe/DeepLearningCourse/2-Linear-networks/Slides/wandb/run-20211007_113930-1ddimv41/logs/debug.log
+2021-10-07 11:39:30,871 INFO    MainThread:304856 [wandb_init.py:_log_setup():349] Logging internal logs to /home/ingambe/DeepLearningCourse/2-Linear-networks/Slides/wandb/run-20211007_113930-1ddimv41/logs/debug-internal.log
+2021-10-07 11:39:30,871 INFO    MainThread:304856 [wandb_init.py:init():381] calling init triggers
+2021-10-07 11:39:30,871 INFO    MainThread:304856 [wandb_init.py:init():386] wandb.init called with sweep_config: {}
+config: {}
+2021-10-07 11:39:30,871 INFO    MainThread:304856 [wandb_init.py:init():401] re-initializing run, found existing run on stack: 5fbfavhj
+2021-10-07 11:39:30,872 INFO    MainThread:304856 [wandb_run.py:finish():1275] finishing run ingambe/course/5fbfavhj
+2021-10-07 11:39:30,875 INFO    MainThread:304856 [jupyter.py:save_history():382] saving 5 cells to _session_history.ipynb
+2021-10-07 11:39:30,877 INFO    MainThread:304856 [wandb_run.py:_config_callback():847] config_cb ('_wandb', 'session_history') code/_session_history.ipynb None
+2021-10-07 11:39:30,884 INFO    MainThread:304856 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-10-07 11:39:30,884 INFO    MainThread:304856 [wandb_init.py:_jupyter_teardown():281] cleaning up jupyter logic
+2021-10-07 11:39:30,885 INFO    MainThread:304856 [wandb_run.py:_atexit_cleanup():1575] got exitcode: 0
+2021-10-07 11:39:30,885 INFO    MainThread:304856 [wandb_run.py:_restore():1547] restore
+2021-10-07 11:39:31,038 INFO    MainThread:304856 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 266514
+  total_bytes: 266514
+}
+
+2021-10-07 11:39:31,304 INFO    MainThread:304856 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 266514
+  total_bytes: 266514
+}
+
+2021-10-07 11:39:32,218 INFO    MainThread:304856 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 266514
+  total_bytes: 284969
+}
+
+2021-10-07 11:39:32,321 INFO    MainThread:304856 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 266514
+  total_bytes: 284969
+}
+
+2021-10-07 11:39:32,436 INFO    MainThread:304856 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 266514
+  total_bytes: 284969
+}
+
+2021-10-07 11:39:32,539 INFO    MainThread:304856 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 284969
+  total_bytes: 284969
+}
+
+2021-10-07 11:39:32,645 INFO    MainThread:304856 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 284969
+  total_bytes: 284969
+}
+
+2021-10-07 11:39:32,750 INFO    MainThread:304856 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 284969
+  total_bytes: 284969
+}
+
+2021-10-07 11:39:32,854 INFO    MainThread:304856 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 284969
+  total_bytes: 284969
+}
+
+2021-10-07 11:39:32,958 INFO    MainThread:304856 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 284969
+  total_bytes: 284969
+}
+
+2021-10-07 11:39:33,063 INFO    MainThread:304856 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 284969
+  total_bytes: 284969
+}
+
+2021-10-07 11:39:33,471 INFO    MainThread:304856 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 284969
+  total_bytes: 284969
+}
+
+2021-10-07 11:39:33,962 INFO    MainThread:304856 [wandb_run.py:_wait_for_finish():1697] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 7
+  other_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 284969
+  total_bytes: 284969
+}
+local_info {
+}
+
+2021-10-07 11:39:35,122 INFO    MainThread:304856 [wandb_run.py:_show_files():1947] logging synced files
+2021-10-07 11:39:35,129 INFO    MainThread:304856 [wandb_init.py:init():430] starting backend
+2021-10-07 11:39:35,129 INFO    MainThread:304856 [backend.py:_multiprocessing_setup():70] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-10-07 11:39:35,134 INFO    MainThread:304856 [backend.py:ensure_launched():135] starting backend process...
+2021-10-07 11:39:35,139 INFO    MainThread:304856 [backend.py:ensure_launched():139] started backend process with pid: 316145
+2021-10-07 11:39:35,140 INFO    MainThread:304856 [wandb_init.py:init():435] backend started and connected
+2021-10-07 11:39:35,167 INFO    MainThread:304856 [wandb_run.py:_label_probe_notebook():819] probe notebook
+2021-10-07 11:39:35,167 INFO    MainThread:304856 [wandb_run.py:_label_probe_notebook():826] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2021-10-07 11:39:35,167 INFO    MainThread:304856 [wandb_init.py:init():494] updated telemetry
+2021-10-07 11:39:35,168 INFO    MainThread:304856 [wandb_init.py:init():517] communicating current version
+2021-10-07 11:39:35,689 INFO    MainThread:304856 [wandb_init.py:init():522] got version response upgrade_message: "wandb version 0.12.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2021-10-07 11:39:35,690 INFO    MainThread:304856 [wandb_init.py:init():530] communicating run to backend with 30 second timeout
+2021-10-07 11:39:35,936 INFO    MainThread:304856 [wandb_init.py:init():557] starting run threads in backend
+2021-10-07 11:39:38,045 INFO    MainThread:304856 [wandb_run.py:_console_start():1605] atexit reg
+2021-10-07 11:39:38,046 INFO    MainThread:304856 [wandb_run.py:_redirect():1479] redirect: SettingsConsole.WRAP
+2021-10-07 11:39:38,046 INFO    MainThread:304856 [wandb_run.py:_redirect():1516] Wrapping output streams.
+2021-10-07 11:39:38,047 INFO    MainThread:304856 [wandb_run.py:_redirect():1540] Redirects installed.
+2021-10-07 11:39:38,048 INFO    MainThread:304856 [wandb_init.py:init():582] run started, returning control to user process
+2021-10-07 11:39:38,158 INFO    MainThread:304856 [wandb_watch.py:watch():43] Watching
+2021-10-07 11:40:41,691 INFO    MainThread:304856 [wandb_setup.py:_flush():69] setting env: {}
+2021-10-07 11:40:41,691 INFO    MainThread:304856 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-10-07 11:40:41,691 INFO    MainThread:304856 [wandb_init.py:_log_setup():348] Logging user logs to /home/ingambe/DeepLearningCourse/2-Linear-networks/Slides/wandb/run-20211007_114041-39noslkg/logs/debug.log
+2021-10-07 11:40:41,691 INFO    MainThread:304856 [wandb_init.py:_log_setup():349] Logging internal logs to /home/ingambe/DeepLearningCourse/2-Linear-networks/Slides/wandb/run-20211007_114041-39noslkg/logs/debug-internal.log
+2021-10-07 11:40:41,692 INFO    MainThread:304856 [wandb_init.py:_jupyter_setup():300] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f70b1267f40>
+2021-10-07 11:40:41,693 INFO    MainThread:304856 [wandb_init.py:init():381] calling init triggers
+2021-10-07 11:40:41,693 INFO    MainThread:304856 [wandb_init.py:init():386] wandb.init called with sweep_config: {}
+config: {}
+2021-10-07 11:40:41,693 INFO    MainThread:304856 [wandb_init.py:init():401] re-initializing run, found existing run on stack: 1ddimv41
+2021-10-07 11:40:41,695 INFO    MainThread:304856 [wandb_run.py:finish():1275] finishing run ingambe/course/1ddimv41

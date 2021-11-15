@@ -1,0 +1,12 @@
+epoch 1, loss 0.03365461900830269
+epoch 2, loss 0.0001134258127422072
+epoch 3, loss 9.443417366128415e-05
+epoch 4, loss 9.44119892665185e-05
+epoch 5, loss 9.463050810154527e-05
+epoch 6, loss 9.446484909858555e-05
+epoch 7, loss 9.538613085169345e-05
+epoch 8, loss 9.477791900280863e-05
+epoch 9, loss 9.447835327591747e-05
+epoch 10, loss 9.47222433751449e-05
+error in estimating w: tensor([-3.1424e-04, -2.4080e-05, -2.8658e-04,  3.8433e-04])
+error in estimating b: tensor([0.0006])

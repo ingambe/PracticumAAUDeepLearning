@@ -1,0 +1,37 @@
+epoch 1, loss 0.03900687023997307
+epoch 2, loss 0.00012398662511259317
+epoch 3, loss 0.000105436505691614
+epoch 4, loss 0.00010532089800108224
+epoch 5, loss 0.00010512649168958887
+epoch 6, loss 0.00010539611685089767
+epoch 7, loss 0.00010505686805117875
+epoch 8, loss 0.00010526509868213907
+epoch 9, loss 0.00010519144416321069
+epoch 10, loss 0.00010522572119953111
+error in estimating w: tensor([-0.0005,  0.0004, -0.0006, -0.0004])
+error in estimating b: tensor([0.0001])
+[34m[1mwandb[39m[22m: logging graph, to disable use `wandb.watch(log_graph=False)`
+Requirement already satisfied: wandb in /home/ingambe/miniconda3/lib/python3.8/site-packages (0.12.2)
+Requirement already satisfied: python-dateutil>=2.6.1 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from wandb) (2.8.1)
+Requirement already satisfied: promise<3,>=2.0 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from wandb) (2.3)
+Requirement already satisfied: six>=1.13.0 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from wandb) (1.15.0)
+Requirement already satisfied: GitPython>=1.0.0 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from wandb) (3.1.17)
+Requirement already satisfied: yaspin>=1.0.0 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from wandb) (2.1.0)
+Requirement already satisfied: shortuuid>=0.5.0 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from wandb) (1.0.1)
+Requirement already satisfied: configparser>=3.8.1 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from wandb) (5.0.2)
+Requirement already satisfied: Click!=8.0.0,>=7.0 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from wandb) (8.0.1)
+Requirement already satisfied: sentry-sdk>=1.0.0 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from wandb) (1.4.1)
+Requirement already satisfied: PyYAML in /home/ingambe/miniconda3/lib/python3.8/site-packages (from wandb) (5.4.1)
+Requirement already satisfied: protobuf>=3.12.0 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from wandb) (3.18.0)
+Requirement already satisfied: docker-pycreds>=0.4.0 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from wandb) (0.4.0)
+Requirement already satisfied: psutil>=5.0.0 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from wandb) (5.8.0)
+Requirement already satisfied: requests<3,>=2.0.0 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from wandb) (2.24.0)
+Requirement already satisfied: pathtools in /home/ingambe/miniconda3/lib/python3.8/site-packages (from wandb) (0.1.2)
+Requirement already satisfied: subprocess32>=3.5.3 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from wandb) (3.5.4)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from GitPython>=1.0.0->wandb) (4.0.7)
+Requirement already satisfied: termcolor<2.0.0,>=1.1.0 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from yaspin>=1.0.0->wandb) (1.1.0)
+Requirement already satisfied: certifi in /home/ingambe/miniconda3/lib/python3.8/site-packages (from sentry-sdk>=1.0.0->wandb) (2021.5.30)
+Requirement already satisfied: urllib3>=1.10.0 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from sentry-sdk>=1.0.0->wandb) (1.25.11)
+Requirement already satisfied: chardet<4,>=3.0.2 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from requests<3,>=2.0.0->wandb) (3.0.4)
+Requirement already satisfied: idna<3,>=2.5 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from requests<3,>=2.0.0->wandb) (2.10)
+Requirement already satisfied: smmap<5,>=3.0.1 in /home/ingambe/miniconda3/lib/python3.8/site-packages (from gitdb<5,>=4.0.1->GitPython>=1.0.0->wandb) (4.0.0)
