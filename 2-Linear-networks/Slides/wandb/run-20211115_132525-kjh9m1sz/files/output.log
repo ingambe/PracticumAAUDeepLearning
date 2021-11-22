@@ -1,0 +1,14 @@
+epoch 1, loss 0.029340332373976707
+epoch 2, loss 0.00010852736158994958
+epoch 3, loss 9.307710570283234e-05
+epoch 4, loss 9.297434735344723e-05
+epoch 5, loss 9.329492604592815e-05
+epoch 6, loss 9.327488805865869e-05
+epoch 7, loss 9.331026376457885e-05
+epoch 8, loss 9.315063653048128e-05
+epoch 9, loss 9.358949318993837e-05
+epoch 10, loss 9.331631736131385e-05
+error in estimating w: tensor([-8.2254e-05,  1.7762e-04, -2.9421e-04,  5.2738e-04])
+error in estimating b: tensor([-0.0003])
+[34m[1mwandb[39m[22m: logging graph, to disable use `wandb.watch(log_graph=False)`
+[34m[1mwandb[39m[22m: Network error resolved after 0:09:46.724400, resuming normal operation.

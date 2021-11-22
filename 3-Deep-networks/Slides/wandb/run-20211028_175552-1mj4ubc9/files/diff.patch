@@ -1,0 +1,424 @@
+diff --git a/3-Deep-networks/Slides/3-Visualize NN.ipynb b/3-Deep-networks/Slides/3-Visualize NN.ipynb
+index f18c96b..9c670db 100644
+--- a/3-Deep-networks/Slides/3-Visualize NN.ipynb	
++++ b/3-Deep-networks/Slides/3-Visualize NN.ipynb	
+@@ -11,7 +11,7 @@
+    "source": [
+     "# Spiral classification\n",
+     "\n",
+-    "Adapted from Alfredo Canziani and Yann LeCun NYU material\n",
++    "Adapted from Alfredo Canziani and Yann LeCun NYU material  \n",
+     "See original: https://github.com/Atcold/pytorch-Deep-Learning/blob/master/04-spiral_classification.ipynb"
+    ]
+   },
+@@ -128,7 +128,7 @@
+   },
+   {
+    "cell_type": "markdown",
+-   "id": "bd352e8f",
++   "id": "061889b1",
+    "metadata": {
+     "slideshow": {
+      "slide_type": "slide"
+@@ -141,7 +141,7 @@
+   {
+    "cell_type": "code",
+    "execution_count": 4,
+-   "id": "76b0ea56",
++   "id": "39247d88",
+    "metadata": {},
+    "outputs": [
+     {
+@@ -190,7 +190,7 @@
+   {
+    "cell_type": "code",
+    "execution_count": 5,
+-   "id": "e477ea39",
++   "id": "b6eea765",
+    "metadata": {
+     "slideshow": {
+      "slide_type": "slide"
+@@ -217,7 +217,7 @@
+   {
+    "cell_type": "code",
+    "execution_count": 6,
+-   "id": "48c01554",
++   "id": "7c2e9e2c",
+    "metadata": {
+     "slideshow": {
+      "slide_type": "slide"
+@@ -255,7 +255,7 @@
+   },
+   {
+    "cell_type": "markdown",
+-   "id": "2485f68a",
++   "id": "de12c94e",
+    "metadata": {
+     "slideshow": {
+      "slide_type": "slide"
+@@ -270,7 +270,7 @@
+   {
+    "cell_type": "code",
+    "execution_count": 7,
+-   "id": "39ddcdfd",
++   "id": "bff559d5",
+    "metadata": {
+     "slideshow": {
+      "slide_type": "-"
+@@ -294,7 +294,7 @@
+   },
+   {
+    "cell_type": "markdown",
+-   "id": "865293b6",
++   "id": "b0fae7b6",
+    "metadata": {
+     "slideshow": {
+      "slide_type": "slide"
+@@ -307,7 +307,7 @@
+   {
+    "cell_type": "code",
+    "execution_count": 8,
+-   "id": "c2b34d4a",
++   "id": "79478104",
+    "metadata": {},
+    "outputs": [],
+    "source": [
+@@ -332,7 +332,7 @@
+   {
+    "cell_type": "code",
+    "execution_count": 9,
+-   "id": "acc048f6",
++   "id": "c3180fe4",
+    "metadata": {
+     "slideshow": {
+      "slide_type": "slide"
+@@ -370,21 +370,22 @@
+   },
+   {
+    "cell_type": "markdown",
+-   "id": "2edc4e20",
++   "id": "03f280d6",
+    "metadata": {
+     "slideshow": {
+      "slide_type": "slide"
+     }
+    },
+    "source": [
+-    "Our accuracy has been vastly improved and we can clearly see that the "
++    "Our accuracy has been vastly improved and we can clearly see that the model better fit the dataset"
+    ]
+   },
+   {
+    "cell_type": "code",
+    "execution_count": 10,
+-   "id": "19dd59c7",
++   "id": "1b179d23",
+    "metadata": {
++    "scrolled": true,
+     "slideshow": {
+      "slide_type": "-"
+     }
+diff --git a/3-Deep-networks/Slides/wandb/debug-internal.log b/3-Deep-networks/Slides/wandb/debug-internal.log
+index c78cdd7..603605a 120000
+--- a/3-Deep-networks/Slides/wandb/debug-internal.log
++++ b/3-Deep-networks/Slides/wandb/debug-internal.log
+@@ -1 +1 @@
+-run-20211028_175100-y4zmsk0w/logs/debug-internal.log
+\ No newline at end of file
++run-20211028_175552-1mj4ubc9/logs/debug-internal.log
+\ No newline at end of file
+diff --git a/3-Deep-networks/Slides/wandb/debug.log b/3-Deep-networks/Slides/wandb/debug.log
+index 1dc04d9..3b68042 120000
+--- a/3-Deep-networks/Slides/wandb/debug.log
++++ b/3-Deep-networks/Slides/wandb/debug.log
+@@ -1 +1 @@
+-run-20211028_175100-y4zmsk0w/logs/debug.log
+\ No newline at end of file
++run-20211028_175552-1mj4ubc9/logs/debug.log
+\ No newline at end of file
+diff --git a/3-Deep-networks/Slides/wandb/latest-run b/3-Deep-networks/Slides/wandb/latest-run
+index 1e5a45d..dd9e66a 120000
+--- a/3-Deep-networks/Slides/wandb/latest-run
++++ b/3-Deep-networks/Slides/wandb/latest-run
+@@ -1 +1 @@
+-run-20211028_175100-y4zmsk0w
+\ No newline at end of file
++run-20211028_175552-1mj4ubc9
+\ No newline at end of file
+diff --git a/3-Deep-networks/Slides/wandb/run-20211028_174552-2iyqud17/logs/debug-internal.log b/3-Deep-networks/Slides/wandb/run-20211028_174552-2iyqud17/logs/debug-internal.log
+index 82323f3..7b4c376 100644
+--- a/3-Deep-networks/Slides/wandb/run-20211028_174552-2iyqud17/logs/debug-internal.log
++++ b/3-Deep-networks/Slides/wandb/run-20211028_174552-2iyqud17/logs/debug-internal.log
+@@ -6152,3 +6152,9 @@
+ 2021-10-28 17:46:59,800 INFO    HandlerThread:627578 [handler.py:finish():683] shutting down handler
+ 2021-10-28 17:47:00,304 INFO    WriterThread:627578 [datastore.py:close():281] close: /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174552-2iyqud17/run-2iyqud17.wandb
+ 2021-10-28 17:52:36,263 INFO    Thread-11 :627578 [upload_job.py:push():137] Uploaded file /tmp/tmpjfca_f9ywandb/3jzs1xf4-wandb-metadata.json
++2021-10-28 17:53:27,469 INFO    Thread-19 :627578 [upload_job.py:push():137] Uploaded file /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174552-2iyqud17/files/requirements.txt
++2021-10-28 17:53:27,476 INFO    Thread-21 :627578 [upload_job.py:push():137] Uploaded file /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174552-2iyqud17/files/wandb-summary.json
++2021-10-28 17:53:27,477 INFO    Thread-20 :627578 [upload_job.py:push():137] Uploaded file /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174552-2iyqud17/files/conda-environment.yaml
++2021-10-28 17:53:27,478 INFO    Thread-18 :627578 [upload_job.py:push():137] Uploaded file /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174552-2iyqud17/files/config.yaml
++2021-10-28 17:53:27,678 INFO    Thread-7  :627578 [sender.py:transition_state():319] send defer: 7
++2021-10-28 17:53:28,003 INFO    MainThread:627578 [internal.py:handle_exit():76] Internal process exited
+diff --git a/3-Deep-networks/Slides/wandb/run-20211028_174657-uty5nt3x/logs/debug-internal.log b/3-Deep-networks/Slides/wandb/run-20211028_174657-uty5nt3x/logs/debug-internal.log
+index 24ef094..995926d 100644
+--- a/3-Deep-networks/Slides/wandb/run-20211028_174657-uty5nt3x/logs/debug-internal.log
++++ b/3-Deep-networks/Slides/wandb/run-20211028_174657-uty5nt3x/logs/debug-internal.log
+@@ -3160,3 +3160,11 @@
+ 2021-10-28 17:48:05,115 INFO    SenderThread:631296 [file_pusher.py:finish():177] shutting down file pusher
+ 2021-10-28 17:48:05,115 INFO    SenderThread:631296 [file_pusher.py:join():182] waiting for file pusher
+ 2021-10-28 17:48:05,115 INFO    HandlerThread:631296 [handler.py:finish():683] shutting down handler
++2021-10-28 17:53:39,859 INFO    Thread-11 :631296 [upload_job.py:push():137] Uploaded file /tmp/tmpkma52eqxwandb/3jtnhrs1-wandb-metadata.json
++2021-10-28 17:54:37,103 INFO    Thread-18 :631296 [upload_job.py:push():137] Uploaded file /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174657-uty5nt3x/files/config.yaml
++2021-10-28 17:54:37,122 INFO    Thread-19 :631296 [upload_job.py:push():137] Uploaded file /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174657-uty5nt3x/files/requirements.txt
++2021-10-28 17:54:37,132 INFO    Thread-20 :631296 [upload_job.py:push():137] Uploaded file /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174657-uty5nt3x/files/conda-environment.yaml
++2021-10-28 17:54:37,182 INFO    Thread-22 :631296 [upload_job.py:push():137] Uploaded file /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174657-uty5nt3x/files/wandb-summary.json
++2021-10-28 17:54:37,424 INFO    Thread-21 :631296 [upload_job.py:push():137] Uploaded file /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174657-uty5nt3x/files/output.log
++2021-10-28 17:54:37,625 INFO    Thread-7  :631296 [sender.py:transition_state():319] send defer: 7
++2021-10-28 17:54:37,923 INFO    MainThread:631296 [internal.py:handle_exit():76] Internal process exited
+diff --git a/3-Deep-networks/Slides/wandb/run-20211028_174808-ti0mdd55/logs/debug-internal.log b/3-Deep-networks/Slides/wandb/run-20211028_174808-ti0mdd55/logs/debug-internal.log
+index cd52b10..dadf1d8 100644
+--- a/3-Deep-networks/Slides/wandb/run-20211028_174808-ti0mdd55/logs/debug-internal.log
++++ b/3-Deep-networks/Slides/wandb/run-20211028_174808-ti0mdd55/logs/debug-internal.log
+@@ -6149,3 +6149,10 @@
+ 2021-10-28 17:48:59,139 INFO    SenderThread:635089 [file_pusher.py:join():182] waiting for file pusher
+ 2021-10-28 17:48:59,140 INFO    HandlerThread:635089 [handler.py:finish():683] shutting down handler
+ 2021-10-28 17:48:59,155 INFO    WriterThread:635089 [datastore.py:close():281] close: /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174808-ti0mdd55/run-ti0mdd55.wandb
++2021-10-28 17:54:51,542 INFO    Thread-11 :635089 [upload_job.py:push():137] Uploaded file /tmp/tmpak5ikfaewandb/2hsd3z0i-wandb-metadata.json
++2021-10-28 17:55:30,353 INFO    Thread-18 :635089 [upload_job.py:push():137] Uploaded file /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174808-ti0mdd55/files/config.yaml
++2021-10-28 17:55:30,356 INFO    Thread-21 :635089 [upload_job.py:push():137] Uploaded file /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174808-ti0mdd55/files/wandb-summary.json
++2021-10-28 17:55:30,359 INFO    Thread-19 :635089 [upload_job.py:push():137] Uploaded file /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174808-ti0mdd55/files/requirements.txt
++2021-10-28 17:55:30,384 INFO    Thread-20 :635089 [upload_job.py:push():137] Uploaded file /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174808-ti0mdd55/files/conda-environment.yaml
++2021-10-28 17:55:30,585 INFO    Thread-7  :635089 [sender.py:transition_state():319] send defer: 7
++2021-10-28 17:55:30,968 INFO    MainThread:635089 [internal.py:handle_exit():76] Internal process exited
+diff --git a/3-Deep-networks/Slides/wandb/run-20211028_174900-3rg5pjt6/logs/debug-internal.log b/3-Deep-networks/Slides/wandb/run-20211028_174900-3rg5pjt6/logs/debug-internal.log
+index a9da6c2..b533b68 100644
+--- a/3-Deep-networks/Slides/wandb/run-20211028_174900-3rg5pjt6/logs/debug-internal.log
++++ b/3-Deep-networks/Slides/wandb/run-20211028_174900-3rg5pjt6/logs/debug-internal.log
+@@ -6149,3 +6149,4 @@
+ 2021-10-28 17:49:35,255 INFO    SenderThread:638804 [file_pusher.py:join():182] waiting for file pusher
+ 2021-10-28 17:49:35,259 INFO    HandlerThread:638804 [handler.py:finish():683] shutting down handler
+ 2021-10-28 17:49:35,303 INFO    WriterThread:638804 [datastore.py:close():281] close: /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174900-3rg5pjt6/run-3rg5pjt6.wandb
++2021-10-28 17:55:42,743 INFO    Thread-11 :638804 [upload_job.py:push():137] Uploaded file /tmp/tmpjsv9q2rmwandb/158t7f5x-wandb-metadata.json
+diff --git a/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files/config.yaml b/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files/config.yaml
+index ee6697b..bbf43ae 100644
+--- a/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files/config.yaml
++++ b/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files/config.yaml
+@@ -12,6 +12,8 @@ _wandb:
+     t:
+       1:
+       - 1
++      2:
++      - 1
+       4: 3.8.5
+       5: 0.12.2
+       8:
+diff --git a/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files/wandb-summary.json b/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files/wandb-summary.json
+index 81a7761..ca59537 100644
+--- a/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files/wandb-summary.json
++++ b/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files/wandb-summary.json
+@@ -1 +1 @@
+-{"linear/loss": 0.8894002437591553, "linear/accuracy": 0.4880000054836273, "_runtime": 14, "_timestamp": 1635436274, "_step": 1999, "mlp/loss": 0.073273204267025, "mlp/accuracy": 0.9850000143051147}
+\ No newline at end of file
++{"linear/loss": 0.8894002437591553, "linear/accuracy": 0.4880000054836273, "_runtime": 14, "_timestamp": 1635436274, "_step": 1999, "mlp/loss": 0.073273204267025, "mlp/accuracy": 0.9850000143051147, "_wandb": {"runtime": 7}}
+\ No newline at end of file
+diff --git a/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/logs/debug-internal.log b/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/logs/debug-internal.log
+index 4d5aef3..3a84e81 100644
+--- a/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/logs/debug-internal.log
++++ b/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/logs/debug-internal.log
+@@ -6084,3 +6084,106 @@
+ 2021-10-28 17:52:43,031 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: stop_status
+ 2021-10-28 17:52:58,468 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: stop_status
+ 2021-10-28 17:52:58,469 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: stop_status
++2021-10-28 17:53:13,907 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: stop_status
++2021-10-28 17:53:13,908 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: stop_status
++2021-10-28 17:53:29,368 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: stop_status
++2021-10-28 17:53:29,369 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: stop_status
++2021-10-28 17:53:44,838 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: stop_status
++2021-10-28 17:53:44,839 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: stop_status
++2021-10-28 17:54:00,294 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: stop_status
++2021-10-28 17:54:00,295 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: stop_status
++2021-10-28 17:54:15,748 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: stop_status
++2021-10-28 17:54:15,749 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: stop_status
++2021-10-28 17:54:31,218 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: stop_status
++2021-10-28 17:54:31,219 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: stop_status
++2021-10-28 17:54:46,780 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: stop_status
++2021-10-28 17:54:46,781 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: stop_status
++2021-10-28 17:55:02,251 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: stop_status
++2021-10-28 17:55:02,252 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: stop_status
++2021-10-28 17:55:17,813 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: stop_status
++2021-10-28 17:55:17,813 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: stop_status
++2021-10-28 17:55:33,390 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: stop_status
++2021-10-28 17:55:33,391 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: stop_status
++2021-10-28 17:55:45,846 WARNING MainThread:646099 [internal.py:wandb_internal():145] Internal process interrupt: 1
++2021-10-28 17:55:46,776 DEBUG   SenderThread:646099 [sender.py:send():185] send: telemetry
++2021-10-28 17:55:46,778 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: poll_exit
++2021-10-28 17:55:46,778 DEBUG   SenderThread:646099 [sender.py:send():185] send: exit
++2021-10-28 17:55:46,778 INFO    SenderThread:646099 [sender.py:send_exit():294] handling exit code: 0
++2021-10-28 17:55:46,779 INFO    SenderThread:646099 [sender.py:send_exit():296] handling runtime: 7
++2021-10-28 17:55:46,785 INFO    SenderThread:646099 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
++2021-10-28 17:55:46,786 INFO    SenderThread:646099 [sender.py:send_exit():306] send defer
++2021-10-28 17:55:46,786 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: poll_exit
++2021-10-28 17:55:46,788 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: defer
++2021-10-28 17:55:46,788 INFO    HandlerThread:646099 [handler.py:handle_request_defer():143] handle defer: 0
++2021-10-28 17:55:46,789 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: defer
++2021-10-28 17:55:46,789 INFO    SenderThread:646099 [sender.py:send_request_defer():315] handle sender defer: 0
++2021-10-28 17:55:46,789 INFO    SenderThread:646099 [sender.py:transition_state():319] send defer: 1
++2021-10-28 17:55:46,790 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: defer
++2021-10-28 17:55:46,791 INFO    HandlerThread:646099 [handler.py:handle_request_defer():143] handle defer: 1
++2021-10-28 17:55:46,791 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: defer
++2021-10-28 17:55:46,792 INFO    SenderThread:646099 [sender.py:send_request_defer():315] handle sender defer: 1
++2021-10-28 17:55:46,792 INFO    SenderThread:646099 [sender.py:transition_state():319] send defer: 2
++2021-10-28 17:55:46,793 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: defer
++2021-10-28 17:55:46,793 INFO    HandlerThread:646099 [handler.py:handle_request_defer():143] handle defer: 2
++2021-10-28 17:55:46,794 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: defer
++2021-10-28 17:55:46,794 INFO    SenderThread:646099 [sender.py:send_request_defer():315] handle sender defer: 2
++2021-10-28 17:55:46,794 INFO    SenderThread:646099 [sender.py:transition_state():319] send defer: 3
++2021-10-28 17:55:46,795 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: defer
++2021-10-28 17:55:46,796 INFO    HandlerThread:646099 [handler.py:handle_request_defer():143] handle defer: 3
++2021-10-28 17:55:46,797 DEBUG   SenderThread:646099 [sender.py:send():185] send: summary
++2021-10-28 17:55:46,798 INFO    SenderThread:646099 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
++2021-10-28 17:55:46,798 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: defer
++2021-10-28 17:55:46,799 INFO    SenderThread:646099 [sender.py:send_request_defer():315] handle sender defer: 3
++2021-10-28 17:55:46,799 INFO    SenderThread:646099 [sender.py:transition_state():319] send defer: 4
++2021-10-28 17:55:46,800 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: defer
++2021-10-28 17:55:46,800 INFO    HandlerThread:646099 [handler.py:handle_request_defer():143] handle defer: 4
++2021-10-28 17:55:46,801 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: defer
++2021-10-28 17:55:46,801 INFO    SenderThread:646099 [sender.py:send_request_defer():315] handle sender defer: 4
++2021-10-28 17:55:46,902 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: poll_exit
++2021-10-28 17:55:47,261 INFO    SenderThread:646099 [sender.py:transition_state():319] send defer: 5
++2021-10-28 17:55:47,262 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: poll_exit
++2021-10-28 17:55:47,263 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: defer
++2021-10-28 17:55:47,263 INFO    HandlerThread:646099 [handler.py:handle_request_defer():143] handle defer: 5
++2021-10-28 17:55:47,264 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: defer
++2021-10-28 17:55:47,264 INFO    SenderThread:646099 [sender.py:send_request_defer():315] handle sender defer: 5
++2021-10-28 17:55:47,265 INFO    SenderThread:646099 [dir_watcher.py:finish():283] shutting down directory watcher
++2021-10-28 17:55:47,366 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: poll_exit
++2021-10-28 17:55:47,403 INFO    SenderThread:646099 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files/config.yaml
++2021-10-28 17:55:47,403 INFO    SenderThread:646099 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files/wandb-summary.json
++2021-10-28 17:55:47,404 INFO    SenderThread:646099 [dir_watcher.py:finish():313] scan: /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files
++2021-10-28 17:55:47,405 INFO    SenderThread:646099 [dir_watcher.py:finish():327] scan save: /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files/wandb-metadata.json wandb-metadata.json
++2021-10-28 17:55:47,405 INFO    SenderThread:646099 [dir_watcher.py:finish():327] scan save: /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files/config.yaml config.yaml
++2021-10-28 17:55:47,405 INFO    SenderThread:646099 [dir_watcher.py:finish():327] scan save: /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files/requirements.txt requirements.txt
++2021-10-28 17:55:47,416 INFO    SenderThread:646099 [dir_watcher.py:finish():327] scan save: /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files/conda-environment.yaml conda-environment.yaml
++2021-10-28 17:55:47,417 INFO    SenderThread:646099 [dir_watcher.py:finish():327] scan save: /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files/output.log output.log
++2021-10-28 17:55:47,418 INFO    SenderThread:646099 [dir_watcher.py:finish():327] scan save: /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/files/wandb-summary.json wandb-summary.json
++2021-10-28 17:55:47,425 INFO    SenderThread:646099 [sender.py:transition_state():319] send defer: 6
++2021-10-28 17:55:47,425 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: poll_exit
++2021-10-28 17:55:47,441 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: defer
++2021-10-28 17:55:47,446 INFO    HandlerThread:646099 [handler.py:handle_request_defer():143] handle defer: 6
++2021-10-28 17:55:47,450 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: defer
++2021-10-28 17:55:47,450 INFO    SenderThread:646099 [sender.py:send_request_defer():315] handle sender defer: 6
++2021-10-28 17:55:47,451 INFO    SenderThread:646099 [file_pusher.py:finish():177] shutting down file pusher
++2021-10-28 17:55:47,539 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: poll_exit
++2021-10-28 17:55:47,540 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: poll_exit
++2021-10-28 17:55:47,643 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: poll_exit
++2021-10-28 17:55:47,644 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: poll_exit
++2021-10-28 17:55:47,748 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: poll_exit
++2021-10-28 17:55:47,748 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: poll_exit
++2021-10-28 17:55:47,852 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: poll_exit
++2021-10-28 17:55:47,852 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: poll_exit
++2021-10-28 17:55:47,956 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: poll_exit
++2021-10-28 17:55:47,956 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: poll_exit
++2021-10-28 17:55:48,060 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: poll_exit
++2021-10-28 17:55:48,061 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: poll_exit
++2021-10-28 17:55:48,165 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: poll_exit
++2021-10-28 17:55:48,165 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: poll_exit
++2021-10-28 17:55:48,269 DEBUG   HandlerThread:646099 [handler.py:handle_request():126] handle_request: poll_exit
++2021-10-28 17:55:48,269 DEBUG   SenderThread:646099 [sender.py:send_request():199] send_request: poll_exit
++2021-10-28 17:55:51,852 WARNING MainThread:646099 [internal.py:is_dead():364] Internal process exiting, parent pid 645536 disappeared
++2021-10-28 17:55:51,852 ERROR   MainThread:646099 [internal.py:wandb_internal():141] Internal process shutdown.
++2021-10-28 17:55:52,271 INFO    SenderThread:646099 [sender.py:finish():985] shutting down sender
++2021-10-28 17:55:52,271 INFO    SenderThread:646099 [file_pusher.py:finish():177] shutting down file pusher
++2021-10-28 17:55:52,272 INFO    SenderThread:646099 [file_pusher.py:join():182] waiting for file pusher
++2021-10-28 17:55:52,273 INFO    HandlerThread:646099 [handler.py:finish():683] shutting down handler
++2021-10-28 17:55:52,799 INFO    WriterThread:646099 [datastore.py:close():281] close: /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/run-y4zmsk0w.wandb
+diff --git a/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/logs/debug.log b/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/logs/debug.log
+index e079c40..a2be1c2 100644
+--- a/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/logs/debug.log
++++ b/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/logs/debug.log
+@@ -42,3 +42,82 @@ config: {}
+ 2021-10-28 17:51:14,175 INFO    MainThread:645536 [wandb_init.py:_resume_backend():271] resuming backend
+ 2021-10-28 17:51:14,524 INFO    MainThread:645536 [wandb_init.py:_pause_backend():262] pausing backend
+ 2021-10-28 17:51:14,524 INFO    MainThread:645536 [jupyter.py:save_ipynb():301] looking for notebook: 3-Deep-networks/Slides/3-Visualize NN.ipynb
++2021-10-28 17:55:45,952 INFO    MainThread:645536 [wandb_run.py:_atexit_cleanup():1575] got exitcode: 0
++2021-10-28 17:55:45,953 INFO    MainThread:645536 [wandb_run.py:_restore():1547] restore
++2021-10-28 17:55:46,788 INFO    MainThread:645536 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
++  wandb_count: 1
++}
++pusher_stats {
++  total_bytes: 810
++}
++
++2021-10-28 17:55:47,263 INFO    MainThread:645536 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
++  wandb_count: 1
++}
++pusher_stats {
++  total_bytes: 810
++}
++
++2021-10-28 17:55:47,436 INFO    MainThread:645536 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
++  wandb_count: 4
++}
++pusher_stats {
++  total_bytes: 10314
++}
++
++2021-10-28 17:55:47,541 INFO    MainThread:645536 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
++  wandb_count: 5
++}
++pusher_stats {
++  total_bytes: 10538
++}
++
++2021-10-28 17:55:47,645 INFO    MainThread:645536 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
++  wandb_count: 5
++}
++pusher_stats {
++  total_bytes: 10538
++}
++
++2021-10-28 17:55:47,750 INFO    MainThread:645536 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
++  wandb_count: 5
++}
++pusher_stats {
++  total_bytes: 10538
++}
++
++2021-10-28 17:55:47,854 INFO    MainThread:645536 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
++  wandb_count: 5
++}
++pusher_stats {
++  total_bytes: 10538
++}
++
++2021-10-28 17:55:47,958 INFO    MainThread:645536 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
++  wandb_count: 5
++}
++pusher_stats {
++  total_bytes: 10538
++}
++
++2021-10-28 17:55:48,063 INFO    MainThread:645536 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
++  wandb_count: 5
++}
++pusher_stats {
++  total_bytes: 10538
++}
++
++2021-10-28 17:55:48,167 INFO    MainThread:645536 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
++  wandb_count: 5
++}
++pusher_stats {
++  total_bytes: 10538
++}
++
++2021-10-28 17:55:48,271 INFO    MainThread:645536 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
++  wandb_count: 5
++}
++pusher_stats {
++  total_bytes: 10538
++}
++
+diff --git a/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/run-y4zmsk0w.wandb b/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/run-y4zmsk0w.wandb
+index 262db23..e9b1bd3 100644
+Binary files a/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/run-y4zmsk0w.wandb and b/3-Deep-networks/Slides/wandb/run-20211028_175100-y4zmsk0w/run-y4zmsk0w.wandb differ

@@ -1,0 +1,97 @@
+2021-11-15 13:23:59,042 INFO    MainThread:684691 [wandb_setup.py:_flush():69] setting env: {}
+2021-11-15 13:23:59,042 INFO    MainThread:684691 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-11-15 13:23:59,043 INFO    MainThread:684691 [wandb_init.py:_log_setup():348] Logging user logs to /home/ingambe/DeepLearningCourse/2-Linear-networks/Slides/wandb/run-20211115_132359-21yxj3wd/logs/debug.log
+2021-11-15 13:23:59,043 INFO    MainThread:684691 [wandb_init.py:_log_setup():349] Logging internal logs to /home/ingambe/DeepLearningCourse/2-Linear-networks/Slides/wandb/run-20211115_132359-21yxj3wd/logs/debug-internal.log
+2021-11-15 13:23:59,045 INFO    MainThread:684691 [wandb_init.py:_jupyter_setup():300] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f02ba84e4c0>
+2021-11-15 13:23:59,046 INFO    MainThread:684691 [wandb_init.py:init():381] calling init triggers
+2021-11-15 13:23:59,046 INFO    MainThread:684691 [wandb_init.py:init():386] wandb.init called with sweep_config: {}
+config: {}
+2021-11-15 13:23:59,046 INFO    MainThread:684691 [wandb_init.py:init():430] starting backend
+2021-11-15 13:23:59,047 INFO    MainThread:684691 [backend.py:_multiprocessing_setup():70] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-11-15 13:23:59,081 INFO    MainThread:684691 [backend.py:ensure_launched():135] starting backend process...
+2021-11-15 13:23:59,104 INFO    MainThread:684691 [backend.py:ensure_launched():139] started backend process with pid: 685716
+2021-11-15 13:23:59,108 INFO    MainThread:684691 [wandb_init.py:init():435] backend started and connected
+2021-11-15 13:23:59,188 INFO    MainThread:684691 [wandb_run.py:_label_probe_notebook():819] probe notebook
+2021-11-15 13:23:59,196 INFO    MainThread:684691 [wandb_run.py:_label_probe_notebook():826] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2021-11-15 13:23:59,196 INFO    MainThread:684691 [wandb_init.py:init():494] updated telemetry
+2021-11-15 13:23:59,198 INFO    MainThread:684691 [wandb_init.py:init():517] communicating current version
+2021-11-15 13:24:00,213 INFO    MainThread:684691 [wandb_init.py:init():522] got version response upgrade_message: "wandb version 0.12.6 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2021-11-15 13:24:00,215 INFO    MainThread:684691 [wandb_init.py:init():530] communicating run to backend with 30 second timeout
+2021-11-15 13:24:00,502 INFO    MainThread:684691 [wandb_init.py:init():557] starting run threads in backend
+2021-11-15 13:24:04,790 INFO    MainThread:684691 [wandb_run.py:_console_start():1605] atexit reg
+2021-11-15 13:24:04,791 INFO    MainThread:684691 [wandb_run.py:_redirect():1479] redirect: SettingsConsole.WRAP
+2021-11-15 13:24:04,792 INFO    MainThread:684691 [wandb_run.py:_redirect():1516] Wrapping output streams.
+2021-11-15 13:24:04,793 INFO    MainThread:684691 [wandb_run.py:_redirect():1540] Redirects installed.
+2021-11-15 13:24:04,793 INFO    MainThread:684691 [wandb_init.py:init():582] run started, returning control to user process
+2021-11-15 13:24:04,799 INFO    MainThread:684691 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:24:04,799 INFO    MainThread:684691 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:24:04,807 INFO    MainThread:684691 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:24:05,042 INFO    MainThread:684691 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:24:05,042 INFO    MainThread:684691 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:18,771 INFO    MainThread:684691 [wandb_run.py:_atexit_cleanup():1575] got exitcode: 0
+2021-11-15 13:25:18,772 INFO    MainThread:684691 [wandb_run.py:_restore():1547] restore
+2021-11-15 13:25:19,400 INFO    MainThread:684691 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 2904067
+  total_bytes: 2904067
+}
+
+2021-11-15 13:25:19,682 INFO    MainThread:684691 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 2904067
+  total_bytes: 2904067
+}
+
+2021-11-15 13:25:20,598 INFO    MainThread:684691 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 2904067
+  total_bytes: 2914149
+}
+
+2021-11-15 13:25:20,705 INFO    MainThread:684691 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 2904067
+  total_bytes: 2914175
+}
+
+2021-11-15 13:25:20,811 INFO    MainThread:684691 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 2904067
+  total_bytes: 2914175
+}
+
+2021-11-15 13:25:20,915 INFO    MainThread:684691 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 2904067
+  total_bytes: 2914175
+}
+
+2021-11-15 13:25:21,019 INFO    MainThread:684691 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 2914175
+  total_bytes: 2914175
+}
+
+2021-11-15 13:25:21,126 INFO    MainThread:684691 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 2914175
+  total_bytes: 2914175
+}
+

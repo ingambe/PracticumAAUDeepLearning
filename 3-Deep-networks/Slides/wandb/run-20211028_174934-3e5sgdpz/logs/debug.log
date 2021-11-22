@@ -1,0 +1,116 @@
+2021-10-28 17:49:34,314 INFO    MainThread:641370 [wandb_setup.py:_flush():69] setting env: {}
+2021-10-28 17:49:34,314 INFO    MainThread:641370 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-10-28 17:49:34,314 INFO    MainThread:641370 [wandb_init.py:_log_setup():348] Logging user logs to /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174934-3e5sgdpz/logs/debug.log
+2021-10-28 17:49:34,314 INFO    MainThread:641370 [wandb_init.py:_log_setup():349] Logging internal logs to /home/ingambe/DeepLearningCourse/3-Deep-networks/Slides/wandb/run-20211028_174934-3e5sgdpz/logs/debug-internal.log
+2021-10-28 17:49:34,316 INFO    MainThread:641370 [wandb_init.py:_jupyter_setup():300] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd021183820>
+2021-10-28 17:49:34,317 INFO    MainThread:641370 [wandb_init.py:init():381] calling init triggers
+2021-10-28 17:49:34,317 INFO    MainThread:641370 [wandb_init.py:init():386] wandb.init called with sweep_config: {}
+config: {}
+2021-10-28 17:49:34,317 INFO    MainThread:641370 [wandb_init.py:init():430] starting backend
+2021-10-28 17:49:34,317 INFO    MainThread:641370 [backend.py:_multiprocessing_setup():70] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-10-28 17:49:34,351 INFO    MainThread:641370 [backend.py:ensure_launched():135] starting backend process...
+2021-10-28 17:49:34,368 INFO    MainThread:641370 [backend.py:ensure_launched():139] started backend process with pid: 641402
+2021-10-28 17:49:34,372 INFO    MainThread:641370 [wandb_init.py:init():435] backend started and connected
+2021-10-28 17:49:34,428 INFO    MainThread:641370 [wandb_run.py:_label_probe_notebook():819] probe notebook
+2021-10-28 17:49:34,432 INFO    MainThread:641370 [wandb_run.py:_label_probe_notebook():826] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2021-10-28 17:49:34,432 INFO    MainThread:641370 [wandb_init.py:init():494] updated telemetry
+2021-10-28 17:49:34,433 INFO    MainThread:641370 [wandb_init.py:init():517] communicating current version
+2021-10-28 17:49:39,435 INFO    MainThread:641370 [wandb_init.py:init():530] communicating run to backend with 30 second timeout
+2021-10-28 17:49:40,603 INFO    MainThread:641370 [wandb_init.py:init():557] starting run threads in backend
+2021-10-28 17:49:43,343 INFO    MainThread:641370 [wandb_run.py:_console_start():1605] atexit reg
+2021-10-28 17:49:43,344 INFO    MainThread:641370 [wandb_run.py:_redirect():1479] redirect: SettingsConsole.WRAP
+2021-10-28 17:49:43,344 INFO    MainThread:641370 [wandb_run.py:_redirect():1516] Wrapping output streams.
+2021-10-28 17:49:43,346 INFO    MainThread:641370 [wandb_run.py:_redirect():1540] Redirects installed.
+2021-10-28 17:49:43,346 INFO    MainThread:641370 [wandb_init.py:init():582] run started, returning control to user process
+2021-10-28 17:49:43,349 INFO    MainThread:641370 [wandb_init.py:_pause_backend():262] pausing backend
+2021-10-28 17:49:43,349 INFO    MainThread:641370 [jupyter.py:save_ipynb():301] looking for notebook: 3-Deep-networks/Slides/3-Visualize NN.ipynb
+2021-10-28 17:49:43,355 INFO    MainThread:641370 [wandb_init.py:_resume_backend():271] resuming backend
+2021-10-28 17:49:43,357 INFO    MainThread:641370 [wandb_init.py:_pause_backend():262] pausing backend
+2021-10-28 17:49:43,357 INFO    MainThread:641370 [jupyter.py:save_ipynb():301] looking for notebook: 3-Deep-networks/Slides/3-Visualize NN.ipynb
+2021-10-28 17:49:43,363 INFO    MainThread:641370 [wandb_init.py:_resume_backend():271] resuming backend
+2021-10-28 17:49:44,595 INFO    MainThread:641370 [wandb_init.py:_pause_backend():262] pausing backend
+2021-10-28 17:49:44,595 INFO    MainThread:641370 [jupyter.py:save_ipynb():301] looking for notebook: 3-Deep-networks/Slides/3-Visualize NN.ipynb
+2021-10-28 17:49:44,600 INFO    MainThread:641370 [wandb_init.py:_resume_backend():271] resuming backend
+2021-10-28 17:49:44,845 INFO    MainThread:641370 [wandb_init.py:_pause_backend():262] pausing backend
+2021-10-28 17:49:44,845 INFO    MainThread:641370 [jupyter.py:save_ipynb():301] looking for notebook: 3-Deep-networks/Slides/3-Visualize NN.ipynb
+2021-10-28 17:49:44,851 INFO    MainThread:641370 [wandb_init.py:_resume_backend():271] resuming backend
+2021-10-28 17:49:44,854 INFO    MainThread:641370 [wandb_init.py:_pause_backend():262] pausing backend
+2021-10-28 17:49:44,854 INFO    MainThread:641370 [jupyter.py:save_ipynb():301] looking for notebook: 3-Deep-networks/Slides/3-Visualize NN.ipynb
+2021-10-28 17:49:44,860 INFO    MainThread:641370 [wandb_init.py:_resume_backend():271] resuming backend
+2021-10-28 17:49:46,883 INFO    MainThread:641370 [wandb_init.py:_pause_backend():262] pausing backend
+2021-10-28 17:49:46,883 INFO    MainThread:641370 [jupyter.py:save_ipynb():301] looking for notebook: 3-Deep-networks/Slides/3-Visualize NN.ipynb
+2021-10-28 17:49:46,888 INFO    MainThread:641370 [wandb_init.py:_resume_backend():271] resuming backend
+2021-10-28 17:49:47,181 INFO    MainThread:641370 [wandb_init.py:_pause_backend():262] pausing backend
+2021-10-28 17:49:47,181 INFO    MainThread:641370 [jupyter.py:save_ipynb():301] looking for notebook: 3-Deep-networks/Slides/3-Visualize NN.ipynb
+2021-10-28 17:50:54,065 INFO    MainThread:641370 [wandb_run.py:_atexit_cleanup():1575] got exitcode: 0
+2021-10-28 17:50:54,066 INFO    MainThread:641370 [wandb_run.py:_restore():1547] restore
+2021-10-28 17:50:54,959 INFO    MainThread:641370 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  total_bytes: 810
+}
+
+2021-10-28 17:50:55,408 INFO    MainThread:641370 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  total_bytes: 810
+}
+
+2021-10-28 17:50:55,688 INFO    MainThread:641370 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  total_bytes: 10539
+}
+
+2021-10-28 17:50:55,794 INFO    MainThread:641370 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  total_bytes: 10539
+}
+
+2021-10-28 17:50:55,898 INFO    MainThread:641370 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  total_bytes: 10539
+}
+
+2021-10-28 17:50:56,002 INFO    MainThread:641370 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  total_bytes: 10539
+}
+
+2021-10-28 17:50:56,106 INFO    MainThread:641370 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  total_bytes: 10539
+}
+
+2021-10-28 17:50:56,212 INFO    MainThread:641370 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  total_bytes: 10539
+}
+
+2021-10-28 17:50:56,317 INFO    MainThread:641370 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  total_bytes: 10539
+}
+
+2021-10-28 17:50:56,421 INFO    MainThread:641370 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  total_bytes: 10539
+}
+

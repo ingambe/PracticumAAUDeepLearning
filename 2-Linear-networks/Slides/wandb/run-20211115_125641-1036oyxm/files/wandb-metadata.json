@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.11.0-40-generic-x86_64-with-glibc2.10",
+    "python": "3.8.5",
+    "heartbeatAt": "2021-11-15T11:56:42.880665",
+    "startedAt": "2021-11-15T11:56:41.445914",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "-f",
+        "/home/ingambe/.local/share/jupyter/runtime/kernel-16ceb216-8730-4aa5-8425-6df561c2e389.json"
+    ],
+    "state": "running",
+    "program": "2-Linear-networks/Slides/4-Wandb.ipynb",
+    "root": "/home/ingambe/DeepLearningCourse",
+    "git": {
+        "remote": "https://github.com/ingambe/DeepLearningAAU.git",
+        "commit": "93780d365c5fe3ec085bd67c47f09a58b3e30b9a"
+    },
+    "email": "pierre.tassel@outlook.fr",
+    "host": "ingambe-PC",
+    "username": "ingambe",
+    "executable": "/home/ingambe/miniconda3/bin/python"
+}

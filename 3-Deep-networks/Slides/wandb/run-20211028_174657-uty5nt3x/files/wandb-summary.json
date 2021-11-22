@@ -1,0 +1,1 @@
+{"linear/loss": 0.8894002437591553, "linear/accuracy": 0.4880000054836273, "_runtime": 64, "_timestamp": 1635436081, "_step": 999, "mlp/loss": 0.05847490578889847, "mlp/accuracy": 0.9926666617393494, "_wandb": {"runtime": 10}}

@@ -1,0 +1,204 @@
+2021-11-15 13:25:26,005 INFO    MainThread:689565 [wandb_setup.py:_flush():69] setting env: {}
+2021-11-15 13:25:26,005 INFO    MainThread:689565 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-11-15 13:25:26,006 INFO    MainThread:689565 [wandb_init.py:_log_setup():348] Logging user logs to /home/ingambe/DeepLearningCourse/2-Linear-networks/Slides/wandb/run-20211115_132525-kjh9m1sz/logs/debug.log
+2021-11-15 13:25:26,006 INFO    MainThread:689565 [wandb_init.py:_log_setup():349] Logging internal logs to /home/ingambe/DeepLearningCourse/2-Linear-networks/Slides/wandb/run-20211115_132525-kjh9m1sz/logs/debug-internal.log
+2021-11-15 13:25:26,009 INFO    MainThread:689565 [wandb_init.py:_jupyter_setup():300] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fb64b9cbb50>
+2021-11-15 13:25:26,012 INFO    MainThread:689565 [wandb_init.py:init():381] calling init triggers
+2021-11-15 13:25:26,013 INFO    MainThread:689565 [wandb_init.py:init():386] wandb.init called with sweep_config: {}
+config: {}
+2021-11-15 13:25:26,013 INFO    MainThread:689565 [wandb_init.py:init():430] starting backend
+2021-11-15 13:25:26,013 INFO    MainThread:689565 [backend.py:_multiprocessing_setup():70] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-11-15 13:25:26,055 INFO    MainThread:689565 [backend.py:ensure_launched():135] starting backend process...
+2021-11-15 13:25:26,085 INFO    MainThread:689565 [backend.py:ensure_launched():139] started backend process with pid: 689613
+2021-11-15 13:25:26,090 INFO    MainThread:689565 [wandb_init.py:init():435] backend started and connected
+2021-11-15 13:25:26,199 INFO    MainThread:689565 [wandb_run.py:_label_probe_notebook():819] probe notebook
+2021-11-15 13:25:26,206 INFO    MainThread:689565 [wandb_run.py:_label_probe_notebook():826] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2021-11-15 13:25:26,206 INFO    MainThread:689565 [wandb_init.py:init():494] updated telemetry
+2021-11-15 13:25:26,209 INFO    MainThread:689565 [wandb_init.py:init():517] communicating current version
+2021-11-15 13:25:27,494 INFO    MainThread:689565 [wandb_init.py:init():522] got version response upgrade_message: "wandb version 0.12.6 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2021-11-15 13:25:27,498 INFO    MainThread:689565 [wandb_init.py:init():530] communicating run to backend with 30 second timeout
+2021-11-15 13:25:27,774 INFO    MainThread:689565 [wandb_init.py:init():557] starting run threads in backend
+2021-11-15 13:25:32,259 INFO    MainThread:689565 [wandb_run.py:_console_start():1605] atexit reg
+2021-11-15 13:25:32,260 INFO    MainThread:689565 [wandb_run.py:_redirect():1479] redirect: SettingsConsole.WRAP
+2021-11-15 13:25:32,261 INFO    MainThread:689565 [wandb_run.py:_redirect():1516] Wrapping output streams.
+2021-11-15 13:25:32,263 INFO    MainThread:689565 [wandb_run.py:_redirect():1540] Redirects installed.
+2021-11-15 13:25:32,263 INFO    MainThread:689565 [wandb_init.py:init():582] run started, returning control to user process
+2021-11-15 13:25:32,268 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:32,269 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:32,280 INFO    MainThread:689565 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:25:32,303 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:32,303 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:32,311 INFO    MainThread:689565 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:25:32,313 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:32,313 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:32,325 INFO    MainThread:689565 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:25:32,342 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:32,342 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:32,350 INFO    MainThread:689565 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:25:32,353 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:32,353 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:32,360 INFO    MainThread:689565 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:25:32,367 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:32,367 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:32,377 INFO    MainThread:689565 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:25:32,385 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:32,386 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:32,393 INFO    MainThread:689565 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:25:32,401 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:32,401 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:32,407 INFO    MainThread:689565 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:25:32,409 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:32,410 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:32,417 INFO    MainThread:689565 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:25:32,418 INFO    MainThread:689565 [wandb_watch.py:watch():43] Watching
+2021-11-15 13:25:32,424 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:32,424 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:32,431 INFO    MainThread:689565 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:25:32,433 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:32,434 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:32,441 INFO    MainThread:689565 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:25:32,450 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:32,450 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:32,461 INFO    MainThread:689565 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:25:33,707 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:33,707 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:33,721 INFO    MainThread:689565 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:25:33,725 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:33,725 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:33,736 INFO    MainThread:689565 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:25:33,748 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:33,749 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:33,760 INFO    MainThread:689565 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:25:33,771 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:33,771 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 13:25:33,783 INFO    MainThread:689565 [wandb_init.py:_resume_backend():271] resuming backend
+2021-11-15 13:25:33,793 INFO    MainThread:689565 [wandb_init.py:_pause_backend():262] pausing backend
+2021-11-15 13:25:33,794 INFO    MainThread:689565 [jupyter.py:save_ipynb():301] looking for notebook: 2-Linear-networks/Slides/5-Pytorch NN.ipynb
+2021-11-15 15:26:16,881 INFO    MainThread:689565 [wandb_run.py:_atexit_cleanup():1575] got exitcode: 0
+2021-11-15 15:26:16,883 INFO    MainThread:689565 [wandb_run.py:_restore():1547] restore
+2021-11-15 15:26:17,315 INFO    MainThread:689565 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 2
+  media_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2922531
+  total_bytes: 2922531
+}
+
+2021-11-15 15:26:17,573 INFO    MainThread:689565 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 2
+  media_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2922531
+  total_bytes: 2922531
+}
+
+2021-11-15 15:26:18,375 INFO    MainThread:689565 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  media_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2922531
+  total_bytes: 2940733
+}
+
+2021-11-15 15:26:18,479 INFO    MainThread:689565 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  media_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2922531
+  total_bytes: 2940733
+}
+
+2021-11-15 15:26:18,618 INFO    MainThread:689565 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  media_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2922531
+  total_bytes: 2940733
+}
+
+2021-11-15 15:26:18,721 INFO    MainThread:689565 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  media_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2940733
+  total_bytes: 2940733
+}
+
+2021-11-15 15:26:18,827 INFO    MainThread:689565 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  media_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2940733
+  total_bytes: 2940733
+}
+
+2021-11-15 15:26:18,931 INFO    MainThread:689565 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  media_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2940733
+  total_bytes: 2940733
+}
+
+2021-11-15 15:26:19,033 INFO    MainThread:689565 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  media_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2940733
+  total_bytes: 2940733
+}
+
+2021-11-15 15:26:19,137 INFO    MainThread:689565 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  media_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2940733
+  total_bytes: 2940733
+}
+
+2021-11-15 15:26:19,240 INFO    MainThread:689565 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  media_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2940733
+  total_bytes: 2940733
+}
+
+2021-11-15 15:26:19,753 INFO    MainThread:689565 [wandb_run.py:_wait_for_finish():1697] got exit ret: file_counts {
+  wandb_count: 7
+  media_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2940733
+  total_bytes: 2940733
+}
+
+2021-11-15 15:26:20,265 INFO    MainThread:689565 [wandb_run.py:_wait_for_finish():1697] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 7
+  media_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 2940733
+  total_bytes: 2940733
+}
+local_info {
+}
+
+2021-11-15 15:26:21,375 INFO    MainThread:689565 [wandb_run.py:_show_summary():1853] rendering summary
+2021-11-15 15:26:21,377 INFO    MainThread:689565 [wandb_run.py:_show_history():1898] rendering history
+2021-11-15 15:26:21,378 INFO    MainThread:689565 [wandb_run.py:_show_files():1947] logging synced files
