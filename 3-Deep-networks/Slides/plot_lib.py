@@ -4,8 +4,8 @@ import torch
 from IPython.display import HTML, display
 
 
-def set_default(figsize=(10, 10), dpi=100):
-    plt.style.use(['dark_background', 'bmh'])
+def set_default(figsize=(30, 30), dpi=300):
+    plt.style.use(['Solarize_Light2'])
     plt.rc('axes', facecolor='k')
     plt.rc('figure', facecolor='k')
     plt.rc('figure', figsize=figsize, dpi=dpi)
