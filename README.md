@@ -1,8 +1,8 @@
-# Practicium Deep Learning at AAU
+# Practicum Deep Learning at AAU
 
 This repo contains the slides and exercises from the Practicum Deep Learning course at the University of Klagenfurt, Austria.
 
-For any question/problem, please contact me: [Pierre TASSEL](https://github.com/ingambe).
+For any question/issue, please contact me: [Pierre TASSEL](https://github.com/ingambe).
 
 ## Table of Contents
 
@@ -18,6 +18,7 @@ The course focus on the basics of Deep Learning, solving machine learning proble
     5. [Linear Algebra](https://github.com/ingambe/PracticumAAUDeepLearning/blob/master/1-Preliminaries/Slides/5-linear-algebra.ipynb)
     6. [AutoGrad](https://github.com/ingambe/PracticumAAUDeepLearning/blob/master/1-Preliminaries/Slides/6-autograd.ipynb)
     7. [Calculus (optional)](https://github.com/ingambe/PracticumAAUDeepLearning/blob/master/1-Preliminaries/Slides/Optional-Calculus.ipynb)
+    7. [Motivation: Stable Diffusion](https://github.com/ingambe/PracticumAAUDeepLearning/blob/master/1-Preliminaries/Slides/Motivation-Stable-Diffusion,AI-Art.ipynb)
 2. [Linear Networks](https://github.com/ingambe/PracticumAAUDeepLearning/tree/master/2-Linear-networks)
     1. [Linear Regression](https://github.com/ingambe/PracticumAAUDeepLearning/blob/master/2-Linear-networks/Slides/1-Linear%20Regression.ipynb)
     2. [Vectorization](https://github.com/ingambe/PracticumAAUDeepLearning/blob/master/2-Linear-networks/Slides/2-Vectorization.ipynb)
@@ -36,8 +37,10 @@ The course focus on the basics of Deep Learning, solving machine learning proble
     1. [Limits of MLP](https://github.com/ingambe/PracticumAAUDeepLearning/blob/master/4-CNN/Slides/1-Limits%20of%20MLP%20for%20image%20recognition.ipynb)
     2. [Convolution](https://github.com/ingambe/PracticumAAUDeepLearning/blob/master/4-CNN/Slides/2-Convolutional%20Neural%20Networks.ipynb)
     3. [LeNet MNIST](https://github.com/ingambe/PracticumAAUDeepLearning/blob/master/4-CNN/Slides/3-LeNet.ipynb)
+    3b. [Gradio LeNet MNIST](https://github.com/ingambe/PracticumAAUDeepLearning/blob/master/4-CNN/Slides/3b-Gradio.ipynb)
     4. [ImageNet and AlexNet](https://github.com/ingambe/PracticumAAUDeepLearning/blob/master/4-CNN/Slides/4-ImageNet_and_AlexNet.ipynb)    
     5. [VGG](https://github.com/ingambe/PracticumAAUDeepLearning/blob/master/4-CNN/Slides/5-VGG.ipynb)
+    5b. [VGG19 Style Transfer](https://github.com/ingambe/PracticumAAUDeepLearning/blob/master/4-CNN/Slides/5b-VGG_style_transfer.ipynb)
     6. [Network in Network](https://github.com/ingambe/PracticumAAUDeepLearning/blob/master/4-CNN/Slides/6-Network%20in%20Network.ipynb)
     7. [Google LeNet](https://github.com/ingambe/PracticumAAUDeepLearning/blob/master/4-CNN/Slides/7-GoogleLeNet.ipynb)
     8. [BatchNorm](https://github.com/ingambe/PracticumAAUDeepLearning/blob/master/4-CNN/Slides/8-Batch%20Norm.ipynb)
